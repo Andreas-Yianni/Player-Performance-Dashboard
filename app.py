@@ -5,8 +5,10 @@ import streamlit as st
 
 from analytics import build_insights, build_player_summary
 from generate_data import generate_player_sessions
+from print_utils import get_print_styles
 
 st.set_page_config(page_title="Interactive Player Performance Monitoring Dashboard", page_icon="🎮", layout="wide")
+st.markdown(get_print_styles(), unsafe_allow_html=True)
 st.title("Interactive Player Performance Monitoring Dashboard")
 st.caption("A portfolio-ready prototype for serious-game analytics, player learning monitoring, and behavior insight generation.")
 
